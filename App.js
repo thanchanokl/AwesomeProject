@@ -28,6 +28,10 @@ import Resort from './screens/week3/Resort';
 import { PaperProvider } from 'react-native-paper';
 import TestPaper from './screens/week4/TestPaper';
 import PaperQuiz from './screens/week4/PaperQuiz';
+import Bmi from './components/week5/Bmi';
+import Heartbeat from './components/week5/Heartbeat';
+import Health from './screens/week5/Health';
+import ChartKitScreen from './screens/week5/ChartKitScreen';
 
 export default function App() {
   return (
@@ -46,14 +50,20 @@ export default function App() {
     // <Ex12/>
     // <Extra/>
     // <Extra2/>
+
     // <Travel/>
     // <Resort/>
     // <PaperProvider>
     //   <TestPaper/>
     // </PaperProvider>
-   <PaperProvider>
-     <PaperQuiz/>
-   </PaperProvider>
+    // <PaperProvider>
+    //  <PaperQuiz/>
+    // </PaperProvider>
+
+    // <Bmi/>
+    // <Heartbeat/>
+    // <Health/>
+    <ChartKitScreen/>
     
     // <ScrollView>
     // <View style = {{ flex:1, marginTop:25 }}>
