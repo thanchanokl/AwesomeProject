@@ -32,6 +32,8 @@ import Bmi from './components/week5/Bmi';
 import Heartbeat from './components/week5/Heartbeat';
 import Health from './screens/week5/Health';
 import ChartKitScreen from './screens/week5/ChartKitScreen';
+import Home from './screens/week6/Home';
+import FlatListExample from './screens/week6/FlatListExample';
 
 export default function App() {
   return (
@@ -63,7 +65,10 @@ export default function App() {
     // <Bmi/>
     // <Heartbeat/>
     // <Health/>
-    <ChartKitScreen/>
+    // <ChartKitScreen/>
+
+    <Home/>
+    // <FlatListExample/>
     
     // <ScrollView>
     // <View style = {{ flex:1, marginTop:25 }}>
