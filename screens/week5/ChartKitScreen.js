@@ -15,7 +15,7 @@ export default function ChartKitScreen({ navigation }) {
         legend : ["Rainy Days"] 
     };
 
-    const chartConfig = {
+    const ChartConfig = {
         backgroundColor: '#e26a00',
         backgroundGradientFrom: '#fb8c00',
         backgroundGradientTo: '#ffa726',
