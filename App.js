@@ -16,6 +16,7 @@ import Ex11 from './screens/week2/Ex11';
 import Ex12 from './screens/week2/Ex12';
 import Extra from './screens/week2/Extra';
 import Extra2 from './screens/week2/Extra2';
+
 import { Alert, Button, Image, ScrollView, ScrollViewBase, Text, TextInput, View } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import Greeting from './components/Greeting';
@@ -25,15 +26,22 @@ import Card from './components/week3/Card';
 import Hotel from './components/week3/Hotel';
 import MyIcon from './components/week3/MyIcon';
 import Resort from './screens/week3/Resort';
+
 import { PaperProvider } from 'react-native-paper';
 import TestPaper from './screens/week4/TestPaper';
 import PaperQuiz from './screens/week4/PaperQuiz';
+
 import Bmi from './components/week5/Bmi';
 import Heartbeat from './components/week5/Heartbeat';
 import Health from './screens/week5/Health';
 import ChartKitScreen from './screens/week5/ChartKitScreen';
 import Home from './screens/week6/Home';
 import FlatListExample from './screens/week6/FlatListExample';
+
+import { NavigationContainer } from '@react-navigation/native';
+import HomeStack from './navigations/HomeStack';
+import BottomTab from './navigations/BottomTab';
+import RootStack from './navigations/RootStack';
 
 export default function App() {
   return (
@@ -67,9 +75,15 @@ export default function App() {
     // <Health/>
     // <ChartKitScreen/>
 
-    <Home/>
+    // <Home/>
     // <FlatListExample/>
-    
+
+    <NavigationContainer>
+      {/* <HomeStack /> */}
+      {/* <BottomTab /> */}
+      <RootStack />
+    </NavigationContainer>
+
     // <ScrollView>
     // <View style = {{ flex:1, marginTop:25 }}>
     // {/* <View style={{ flex: 1, flexDirection: 'column' }}> */}

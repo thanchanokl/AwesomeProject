@@ -6,9 +6,11 @@ import Hotel from '../../components/week3/Hotel';
 import MyIcon from '../../components/week3/MyIcon';
 import Menu from '../../components/week3/Menu';
 
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+const Tab = createMaterialTopTabNavigator();
 
 export default function Travel() {
-    return (
+    return (       
         <ScrollView>
             <View style={{ flex: 1, paddingTop : 50  }}>
                 {/* <Text>Text of Week 3 </Text> */}
