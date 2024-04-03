@@ -5,6 +5,7 @@ import Cover from "../../components/week6/Cover";
 import HomeIconMenu from "../../components/week6/HomeIconMenu";
 import Tour from "../../components/week6/Tour";
 import TourFlatList from "../../components/week6/TourFlatList";
+import TourFlatList2 from "../../components/week6/TourFlatList2";
 import Event from "../../components/week6/Event";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
                 <HomeIconMenu />
                 <Tour style={{ margin: 20 }} />
                 <TourFlatList style={{ margin: 20 }} />
+                <TourFlatList2 style={{ margin: 20 }} />
                 <Event style={{ margin: 20 }} />
             </View>
         </ScrollView>

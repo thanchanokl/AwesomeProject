@@ -82,6 +82,7 @@ export default function App() {
       {/* <HomeStack /> */}
       {/* <BottomTab /> */}
       <RootStack />
+      
     </NavigationContainer>
 
     // <ScrollView>
