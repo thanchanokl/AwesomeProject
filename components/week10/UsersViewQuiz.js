@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Dimensions } from "react-native";
 import MapView, { Marker } from "react-native-maps";
-import UniversityMarkers from "./UniversityMarkers";
+import UsersMarkersQuiz from "./UsersMarkersQuiz";
 import LocationService from "../../services/LocationService";
 
-export default function MyMapView(props) {
+
+export default function UsersViewQuiz(props) {
   const width = Dimensions.get("screen").width;
   const height = Dimensions.get("screen").height;  
 
   const [universities, setUniversities] = useState([]);
   const loadUniversities = async () => {
-    let url_endpoint = "https://raw.githubusercontent.com/arc6828/myreactnative/master/assets/week10/universities.json";
+    let url_endpoint = "https://ckartisan.com/api/location";
     try {
       let response = await fetch(url_endpoint);
       let items = await response.json();
@@ -72,7 +73,7 @@ export default function MyMapView(props) {
           key={"xxxx"}
         /> */}
 
-        <UniversityMarkers items={universities} />
+        <UsersMarkersQuiz items={universities} />
       </MapView>
     );
   } else {

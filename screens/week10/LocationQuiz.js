@@ -2,8 +2,9 @@ import { useNavigation } from "@react-navigation/native";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import GPS from "../../helpers/GPS";
-import MyMapView from "../../components/week10/MyMapView";
 import { FontAwesome } from "@expo/vector-icons";
+import UsersViewQuiz from "../../components/week10/UsersViewQuiz";
+
 
 export default function LocationQuiz() {
   const [location, setLocation] = useState(null);
@@ -46,7 +47,7 @@ export default function LocationQuiz() {
       </View>
 
       <View style={{ flex: 1 }}>
-        <MyMapView 
+        <UsersViewQuiz 
           location={location} 
           setLocation={setLocation} 
           recordLocation={recordLocation}
@@ -62,4 +63,3 @@ export default function LocationQuiz() {
     </View>
 );
 }
-

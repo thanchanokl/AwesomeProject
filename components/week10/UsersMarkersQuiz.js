@@ -1,8 +1,8 @@
 import React from "react";
 import MapView, { Marker } from "react-native-maps";
-import { FontAwesome } from "@expo/vector-icons";
+import { FontAwesome6 } from "@expo/vector-icons";
 
-export default function UniversityMarkers(props) {
+export default function UsersMarkersQuiz(props) {
 
   return props.items.map((item) => (
     <Marker
@@ -10,11 +10,11 @@ export default function UniversityMarkers(props) {
         "latitude": Number(item.latitude),
         "longitude": Number(item.longitude)
       }}
-      title={item.name}
+      title={item.user_id}
       key={item.id.toString()}
-      description={item.address}
+      description={item.user_id}
     >
-        <FontAwesome name="university" size={20} color="tomato" />
+        <FontAwesome6 name="person-skiing" size={20} color="tomato" />
     </Marker>
   ));
 }
